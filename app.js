@@ -1,15 +1,13 @@
-
 //get module
-var webp=require('./webpconverter_test.js');
+var webp = require('./webpconverter_test.js');
 
 /******************************************************* cwebp *****************************************************/
 
 //pass input_image(.jpeg,.pnp .....) path ,output_image(give path where to save and image file name with .webp file type extension)
-webp.cwebp("nodejs_logo.jpg","nodejs_logo.webp","-q 80",function(status)
-	{
-		//if conversion successfull status will be 'converted successfully'
-		console.log(status);
-	});
+webp.cwebp("nodejs_logo.jpg", "nodejs_logo.webp", "-q 80", function (status) {
+  //if conversion successfull status will be 'converted successfully'
+  console.log(status);
+});
 
 /******************************************************* dwebp *****************************************************/
 
