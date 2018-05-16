@@ -22,9 +22,9 @@ module.exports.cwebp = function (input_image, output_image, option, callback) {
   exec(enwebp(), query.split(/\s+/), function (error, stdout, stderr) //execute command
   {
     if (error) {
-      callback("101" + "\n" + error);//return error code
+      callback('101', error);//return error code
     } else {
-      callback("100\nConverted Successfully");//return success code
+      callback('100', 'Converted Successfully');//return success code
     }
   });
 };
@@ -47,9 +47,9 @@ module.exports.dwebp = function (input_image, output_image, option, callback) {
   exec(dewebp(), query.split(/\s+/), function (error, stdout, stderr) //execute command
   {
     if (error) {
-      callback("101" + "\n" + error);//return error code
+      callback('101', error);//return error code
     } else {
-      callback("100\nConverted Successfully");//return success code
+      callback('100', 'Converted Successfully');//return success code
     }
   });
 };
@@ -70,9 +70,9 @@ module.exports.gwebp = function (input_image, output_image, option, callback) {
   exec(gifwebp(), query.split(/\s+/), function (error, stdout, stderr) //execute command
   {
     if (error) {
-      callback("101" + "\n" + error);//return error code
+      callback('101', error);//return error code
     } else {
-      callback("100\nConverted Successfully");//return success code
+      callback('100', 'Converted Successfully');//return success code
     }
   });
 };
@@ -94,9 +94,9 @@ module.exports.webpmux_add = function (input_image, output_image, icc_profile, o
   exec(webpmux(), query.split(/\s+/), function (error, stdout, stderr) //execute command
   {
     if (error) {
-      callback("101" + "\n" + error);//return error code
+      callback('101', error);//return error code
     } else {
-      callback("100\nConverted Successfully");//return success code
+      callback('100', 'Converted Successfully');//return success code
     }
   });
 };
@@ -114,9 +114,9 @@ module.exports.webpmux_extract = function (input_image, icc_profile, option, cal
   exec(webpmux(), query.split(/\s+/), function (error, stdout, stderr) //execute command
   {
     if (error) {
-      callback("101" + "\n" + error);//return error code
+      callback('101', error);//return error code
     } else {
-      callback("100\nConverted Successfully");//return success code
+      callback('100', 'Converted Successfully');//return success code
     }
   });
 };
@@ -134,9 +134,9 @@ module.exports.webpmux_strip = function (input_image, output_image, option, call
   exec(webpmux(), query.split(/\s+/), function (error, stdout, stderr) //execute command
   {
     if (error) {
-      callback("101" + "\n" + error);//return error code
+      callback('101', error);//return error code
     } else {
-      callback("100\nConverted Successfully");//return success code
+      callback('100', 'Converted Successfully');//return success code
     }
   });
 };
@@ -165,9 +165,9 @@ module.exports.webpmux_animate = function (input_images, output_image, loop, bgc
   exec(webpmux(), query.split(/\s+/), function (error, stdout, stderr) //execute command
   {
     if (error) {
-      callback("101" + "\n" + error);//return error code
+      callback('101', error);//return error code
     } else {
-      callback("100\nConverted Successfully");//return success code
+      callback('100', 'Converted Successfully');//return success code
     }
   });
 };
@@ -186,9 +186,9 @@ module.exports.webpmux_getframe = function (input_image, output_image, frame_num
   exec(webpmux(), query.split(/\s+/), function (error, stdout, stderr) //execute command
   {
     if (error) {
-      callback("101" + "\n" + error);//return error code
+      callback('101', error);//return error code
     } else {
-      callback("100\nConverted Successfully");//return success code
+      callback('100', 'Converted Successfully');//return success code
     }
   });
 };
